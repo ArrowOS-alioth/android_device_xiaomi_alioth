@@ -2,19 +2,11 @@
 
 # Clone ArrowOS-alioth repositories (branch 13)
 
-
-# Remove and re-clone hardware/dolby
-if [ -d "hardware/dolby" ]; then
-    rm -rf hardware/dolby
-fi
-git clone https://github.com/zen0s-aospforge/hardware_dolby hardware/dolby -b c2
-
-
 # Remove and re-clone device/xiaomi/sm8250-common
 if [ -d "device/xiaomi/sm8250-common" ]; then
     rm -rf device/xiaomi/sm8250-common
 fi
-git clone https://github.com/ArrowOS-alioth/android_device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common -b 13
+git clone https://github.com/ArrowOS-alioth/android_device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common -b 13.1
 
 
 # Remove and re-clone vendor/xiaomi/sm8250-common
