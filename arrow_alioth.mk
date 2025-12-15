@@ -18,6 +18,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
+ARROW_GAPPS := true
+BYPASS_CHARGE_SUPPORTED := true
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
