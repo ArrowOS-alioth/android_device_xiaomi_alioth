@@ -6,7 +6,7 @@
 if [ -d "device/xiaomi/sm8250-common" ]; then
     rm -rf device/xiaomi/sm8250-common
 fi
-git clone https://github.com/ArrowOS-alioth/android_device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common -b 13.1
+git clone https://github.com/Alioth-Tree/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common -b 14
 
 
 # Remove and re-clone vendor/xiaomi/sm8250-common
@@ -34,14 +34,8 @@ git clone https://github.com/ArrowOS-alioth/android_device_xiaomi_alioth.git dev
 if [ -d "hardware/xiaomi" ]; then
     rm -rf hardware/xiaomi
 fi
-git clone https://github.com/ArrowOS-alioth/hardware_xiaomi.git hardware/xiaomi -b 13
+git clone https://github.com/Alioth-Tree/hardware_xiaomi.git hardware/xiaomi -b 14
 
-
-# Remove and re-clone android_hardware_qcom-caf_sm8250_display
-if [ -d "hardware/qcom-caf/sm8250/display" ]; then
-    rm -rf hardware/qcom-caf/sm8250/display
-fi
-git clone https://github.com/ArrowOS-alioth/hardware_qcom-caf_display_sm8250.git hardware/qcom-caf/sm8250/display -b 13
 
 # Script to apply Binder threadpool patch
 (
